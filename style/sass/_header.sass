@@ -1,0 +1,32 @@
+.header
+  background: url(../img/backgrounds/main-bg.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+  &__gradient
+    background: $gradient
+
+.topbar
+  height: 80px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  font-family: "Roboto"
+  font-weight: 900
+  &__logo
+    display: flex
+    align-items: center
+
+  // &__logo-img
+
+  &__name-of-company
+    font-weight: 300
+    margin-left: 10px
+
+  // &__navigation
+
+  &__link
+    margin-left: 25px
+    text-transform: uppercase
+    color: $color-light
+    &--active
+      color: $color-main
