@@ -7,26 +7,38 @@
   &__wrapper
     display: flex
     justify-content: space-between
+    align-items: center
+    gap: 20px
+    @media screen and (max-width: 640px)
+      flex-direction: column
 
   &__img-block
     margin: 0 auto
     
   &__img
+    @media screen and (max-width: 640px)
+      display: block
+      margin: 0 auto
+      width: 50%
 
   &__content
-    width: 540px
+    max-width: 540px
+    @media screen and (max-width: 640px)
+      text-align: center
 
   &__title
+    margin-bottom: 30px
 
   &__text
-    margin-top: 30px
+    margin-bottom: 30px
     font-size: 14px
     font-family: Roboto
     font-weight: light
     color: #413d4b
 
   &__btn
-    margin-top: 30px
+    @media screen and (max-width: 640px)
+      margin: 0 auto
 
   &__video
     // min-height: 550px
@@ -40,9 +52,11 @@
     min-height: 550px
     background: $gradient
 
-  &__player
+  &__player-button
     display: block
     margin: 0 auto
+    background-color: transparent
+    cursor: pointer
 
   &__video-slogan
     margin-top: 30px
