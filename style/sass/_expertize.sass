@@ -31,9 +31,13 @@
     &:nth-child(1),
     &:nth-child(4)
       border-left: none
-    &:hover
+    @media screen and ( max-width: 640px )
+      flex: 0 0 50%
+      &:nth-child(3)
+        border-top: 1px solid #ebebeb
+      &:nth-child(4)
+        border-left: 1px solid #ebebeb
       
-
   &__img
 
   &__subtitle

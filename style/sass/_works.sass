@@ -1,0 +1,50 @@
+.works
+  padding: 70px 0
+  color: $color-dark
+  &__group
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+  &__title
+
+  &__link
+    font-size: 14px
+    line-height: 1.2
+    font-family: "Roboto"
+    color: rgb(65, 61, 75)
+    transition: .2s all
+    &::after
+      content: " >"
+    &:hover
+      color: $color-main
+
+  &__wrapper
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 30px
+  
+  &__tile
+    flex: 1 1 calc( 100% / 5 )
+    width: ( 100% / 5 )
+    padding-top: ( 100% / 6 )
+    position: relative
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+      position: absolute
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      transition: .3s all
+      &:hover
+        transform: scale(1.05)
+    // @media screen and (max-width: 768px)
+    //   flex: 1 1 calc( 100% / 4 )
+
+  &__bnt
+    margin: 0 auto
